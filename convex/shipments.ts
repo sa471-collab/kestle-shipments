@@ -41,7 +41,7 @@ export const dispatch = mutation({
       .unique();
     if (!s) throw new Error("Shipment " + shipmentRef + " not found");
     if (s.status !== "label_created") throw new Error("Shipment " + shipmentRef + " is not waiting for dispatch");
-    await ctx.db.patch(s._id, { status: "intransit", dispatchedAt: Date.now() });
+    await ctx.db.patch(s._id, { status: "in_transit", dispatchedAt: Date.now() });
     return null;
   },
 });
