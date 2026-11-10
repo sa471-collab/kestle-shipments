@@ -1,0 +1,7 @@
+{
+  "name": "kestle-shipments",
+  "private": true,
+  "description": "Kestle Freight shipment tracking backend. TEST FIXTURE, synthetic data only.",
+  "type": "module",
+  "dependencies": { "convex": "1.49.0" }
+}
